@@ -1,239 +1,279 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>STOCK LEARNERS GAUTAM JHA {SEBI REGISTERED}</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<div id="bull-club-page">
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+#bull-club-page,
+#bull-club-page * {
+  box-sizing: border-box;
 }
 
-body{
-background:#0f172a;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-color:#fff;
+#bull-club-page {
+  width: 100%;
+  min-height: 1800px;
+  margin: 0;
+  padding: 164px 25px 120px;
+  background: linear-gradient(145deg,#10223e,#07101d 65%,#030811);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  overflow: hidden;
 }
 
-/* CARD */
-
-.container{
-width:95%;
-max-width:420px;
-padding:30px 25px;
-border-radius:18px;
-
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(12px);
-
-border:1px solid rgba(255,255,255,0.08);
-
-box-shadow:0 20px 60px rgba(0,0,0,0.6);
-text-align:center;
+#bull-club-page .bull-card {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 28px 24px 30px;
+  background: linear-gradient(145deg,#10182c,#091222);
+  border: 2px solid #263348;
+  border-radius: 40px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.35);
 }
 
-/* LOGO */
-
-.logo{
-width:80px;
-height:80px;
-border-radius:50%;
-border:2px solid #FFD700;
-margin-bottom:12px;
+#bull-club-page .bull-logo {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  border: 3px solid #e7bd28;
+  margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.35;
+  background: #0b1528;
+  overflow: hidden;
 }
 
-/* TEXT */
-
-h1{
-font-size:22px;
-color:#FFD700;
-margin-bottom:6px;
+#bull-club-page .bull-logo span {
+  display: block;
 }
 
-h2{
-font-size:15px;
-opacity:0.9;
-margin-bottom:10px;
+#bull-club-page .bull-badge {
+  display: inline-block;
+  padding: 11px 23px;
+  border-radius: 40px;
+  background: #142b4b;
+  color: #ffca29;
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 23px;
 }
 
-.sub{
-font-size:13px;
-opacity:0.7;
-margin-bottom:18px;
+#bull-club-page .bull-subtitle {
+  font-size: 26px;
+  color: #e1e5ed;
+  margin: 0 0 12px;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
-/* BUTTON */
-
-.btn{
-display:block;
-text-decoration:none;
-background:#22c55e;
-color:#000;
-font-weight:700;
-padding:16px;
-border-radius:10px;
-margin:12px 0;
-transition:0.3s;
+#bull-club-page .bull-heading {
+  font-size: 39px;
+  line-height: 1.29;
+  font-weight: 900;
+  color: #fff;
+  margin: 0 auto 17px;
 }
 
-.btn:hover{
-background:#16a34a;
-transform:scale(1.03);
+#bull-club-page .yellow {
+  color: #ffc321;
 }
 
-/* TRUST BOX */
-
-.trust{
-background:rgba(0,255,150,0.08);
-padding:10px;
-border-radius:10px;
-font-size:13px;
-margin-bottom:15px;
-border:1px solid rgba(0,255,150,0.2);
+#bull-club-page .bull-description {
+  font-size: 23px;
+  line-height: 1.5;
+  color: #d1d9e7;
+  margin: 0 0 23px;
 }
 
-/* LIST */
-
-.points{
-list-style:none;
-font-size:14px;
-text-align:left;
-margin:15px 0;
+#bull-club-page .bull-feature {
+  width: 100%;
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 15px 19px;
+  margin: 0 0 13px;
+  border-radius: 23px;
+  background: #102039;
+  border: 1px solid #1e314b;
+  color: #e7ebf3;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
-.points li{
-margin:8px 0;
+#bull-club-page .bull-telegram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 100px;
+  margin: 23px auto 18px;
+  padding: 18px 10px;
+  border-radius: 27px;
+  background: linear-gradient(180deg,#08c956,#009a3c);
+  border: 2px solid #00c853;
+  box-shadow: 0 10px 28px rgba(0,220,80,.35);
+  color: white !important;
+  text-decoration: none !important;
+  font-size: 29px;
+  font-weight: 900;
+  line-height: 1.3;
+  transition: .2s;
 }
 
-/* URGENCY */
-
-.timer{
-margin-top:10px;
-font-size:13px;
-color:#facc15;
+#bull-club-page .bull-telegram:active {
+  transform: scale(.97);
 }
 
-/* SOCIAL PROOF */
-
-.proof{
-margin-top:12px;
-font-size:12px;
-opacity:0.7;
+#bull-club-page .telegram-icon {
+  font-size: 37px;
 }
 
-/* FOOTER BRAND */
-
-.footer{
-margin-top:20px;
-font-size:12px;
-opacity:0.6;
+#bull-club-page .bull-instruction {
+  color: #aab9cf;
+  font-size: 19px;
+  line-height: 1.6;
+  margin: 14px 0 17px;
 }
 
-.footer a{
-color:#38bdf8;
-text-decoration:none;
-font-weight:600;
+#bull-club-page .bull-join {
+  font-size: 17px;
+  color: #c3cada;
+  margin: 0 0 18px;
 }
 
-.footer a:hover{
-text-decoration:underline;
+#bull-club-page .bull-sebi {
+  color: #8798b1;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
 }
 
-/* RISK */
+@media(max-width:480px) {
+  #bull-club-page {
+    padding: 85px 13px 100px;
+    min-height: 1500px;
+  }
 
-.risk{
-margin-top:10px;
-font-size:11px;
-opacity:0.5;
+  #bull-club-page .bull-card {
+    padding: 24px 15px 27px;
+    border-radius: 29px;
+  }
+
+  #bull-club-page .bull-logo {
+    width: 92px;
+    height: 92px;
+    font-size: 21px;
+  }
+
+  #bull-club-page .bull-badge {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+
+  #bull-club-page .bull-subtitle {
+    font-size: 20px;
+  }
+
+  #bull-club-page .bull-heading {
+    font-size: 29px;
+  }
+
+  #bull-club-page .bull-description {
+    font-size: 18px;
+  }
+
+  #bull-club-page .bull-feature {
+    min-height: 61px;
+    font-size: 16px;
+    padding: 13px 12px;
+    border-radius: 18px;
+  }
+
+  #bull-club-page .bull-telegram {
+    min-height: 76px;
+    font-size: 21px;
+    border-radius: 22px;
+  }
+
+  #bull-club-page .telegram-icon {
+    font-size: 29px;
+  }
+
+  #bull-club-page .bull-instruction {
+    font-size: 15px;
+  }
+
+  #bull-club-page .bull-join {
+    font-size: 14px;
+  }
+
+  #bull-club-page .bull-sebi {
+    font-size: 13px;
+  }
 }
-
 </style>
-</head>
 
-<body>
+<div class="bull-card">
 
-<div class="container">
+  <div class="bull-logo">
+    <span>The<br>Bull<br>Club</span>
+  </div>
 
-<img src="https://i.ibb.co/B5p5nYgB/GAUTAM-IMAGE-1.jpg" class="logo">
+  <div class="bull-badge">
+    SEBI Registered Research Analyst
+  </div>
 
-<h1>STOCK LEARNERS GAUTAM JHA {SEBI REGISTERED}</h1>
-<h2>NIFTY • BANKNIFTY • OPTIONS</h2>
+  <p class="bull-subtitle">
+    Stop Following Random Tips.
+  </p>
 
-<p class="sub">
-Daily Intraday Trading Signals & Analysis
-</p>
+  <h1 class="bull-heading">
+    Get Daily <span class="yellow">Nifty, Bank Nifty, Sensex &amp; Stock Options</span> Research Calls
+  </h1>
 
-<!-- TOP BUTTON -->
-<a href="https://t.me/+uZ0iMomf2NYwYTg1" class="btn">
-🚀 Join Free Telegram Channel
-</a>
+  <p class="bull-description">
+    Live Trade Guide — Straight to Your Phone
+  </p>
 
-<div class="trust">
-✔ Trusted by 5,000+ Traders <br>
-✔ Daily Consistent Setups
-</div>
+  <div class="bull-feature">
+    📈 Daily Market Research Before Market Opens
+  </div>
 
-<ul class="points">
-<li>✔ 5–7 High Probability Trades</li>
-<li>✔ Exact Entry, SL & Target</li>
-<li>✔ Beginner Friendly Guidance</li>
-<li>✔ Live Market Updates</li>
-</ul>
+  <div class="bull-feature">
+    🎯 Proper Entry • Target • Stoploss
+  </div>
 
-<!-- BOTTOM BUTTON -->
-<a href="https://t.me/+uZ0iMomf2NYwYTg1" class="btn">
-🚀 Join Free Telegram Channel
-</a>
+  <div class="bull-feature">
+    ⚡ Instant Alerts on Mobile
+  </div>
 
-<div class="timer">
-⏳ Free Access Closing Soon
-</div>
+  <a class="bull-telegram"
+     href="https://t.me/YOUR_CHANNEL"
+     target="_blank">
+    <span class="telegram-icon">➤</span>
+    JOIN TELEGRAM CHANNEL
+  </a>
 
-<div class="proof">
-📈 Limited Seats • Active Community
-</div>
+  <p class="bull-instruction">
+    Tap the button → Telegram opens → Press <b>Join</b>
+  </p>
 
-<p class="risk">
-⚠ Market investments are subject to risk
-</p>
+  <p class="bull-join">
+    Join Now • Instant Access • Trade Smarter
+  </p>
 
-<!-- CLEAN FOOTER -->
-<div class="footer">
-Powered by 
-<a href="https://t.me/+uZ0iMomf2NYwYTg1" target="_blank">
-Ankul Ad Agency
-</a>
-</div>
+  <p class="bull-sebi">
+    SEBI Registration No. INH000013183<br>
+    Investment in securities market is subject to market risks.
+  </p>
 
 </div>
-
-</body>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1568822481235135');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1568822481235135&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-</html>
+</div>
